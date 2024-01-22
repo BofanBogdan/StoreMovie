@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import "./style.scss";
 
 const ContentWrapper = ({ children, style }) => {
@@ -7,4 +8,10 @@ const ContentWrapper = ({ children, style }) => {
     </div>
   );
 };
+
+ContentWrapper.propTypes = {
+  children: PropTypes.node.isRequired, // Adaugarea validarii pentru propietatea "children"
+  style: PropTypes.object, // Poți adăuga și validarea pentru propietatea "style" dacă este necesar
+};
+
 export default ContentWrapper;
