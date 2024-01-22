@@ -7,6 +7,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import "./style.scss";
 
 import ContentWrapper from "../contentWrapper/ContentWrapper";
+
 import logo from "../../assets/iconapp.svg";
 
 const Header = () => {
